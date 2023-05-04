@@ -1,0 +1,85 @@
+@import '../../styles/global.scss';
+
+.pageBG {
+  @mixin pad {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin mobile {
+    @media (max-width: 390px) {
+      @content;
+    }
+  }
+  height: auto;
+
+  // header {
+  //   max-width: auto;
+  //   height: 150px;
+  // }
+
+  .pageImg {
+    width: auto;
+    height: auto;
+    // background: url(./Rectangle1.jpg) no-repeat center 100%;
+    background-size: cover;
+    @include pad {
+      background: none;
+    }
+
+    .container {
+      width: 720px;
+      height: auto;
+
+      @include pad {
+        width: auto;
+        // margin-top: 15px;
+        // margin-bottom: 15px;
+      }
+
+      form {
+        margin: 0;
+      }
+      .formStyle {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1.15rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        // background-color: #f5f4f6;
+        background-clip: padding-box;
+        // border: 1px solid #b7b0bf;
+        appearance: none;
+        border-radius: 0.225rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        @include pad() {
+          background-color: #f5f4f6;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #b7b0bf;
+          border: 1px solid #b7b0bf;
+        }
+        .title {
+          padding-top: 20px;
+        }
+        input {
+          height: 50px;
+          margin: 15px 0;
+        }
+        button {
+          width: 110px;
+          height: 40px;
+          @include pad {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  // footer {
+  //   width: auto;
+  //   height: 360px;
+  //   margin-top: auto;
+  // }
+}

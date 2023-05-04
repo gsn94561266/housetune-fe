@@ -1,0 +1,50 @@
+@import '../../styles/global.scss';
+
+.pageBG {
+  @mixin pad {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin mobile {
+    @media (max-width: 390px) {
+      @content;
+    }
+  }
+  height: auto;
+
+  // header {
+  //   width: auto;
+  //   height: 150px;
+  // }
+
+  .container {
+    width: 720px;
+    @include pad {
+      width: auto;
+    }
+
+    form {
+      // margin-top: 25px;
+      // margin-bottom: 25px;
+
+      h5 {
+        margin-top: 7px;
+      }
+      .w-40 {
+        width: 48%;
+      }
+      .btn {
+        @include pad {
+          width: 80px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  // footer {
+  //   width: auto;
+  //   height: 360px;
+  //   margin-top: auto;
+  // }
+}

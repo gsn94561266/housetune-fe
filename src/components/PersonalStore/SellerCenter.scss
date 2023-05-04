@@ -1,0 +1,109 @@
+.seller-center {
+  min-width: 1500px;
+  overflow: auto;
+  .seller-header {
+    .logo-image {
+      max-height: 70px;
+      max-width: 180px;
+    }
+  }
+  .seller-aside-box {
+    min-width: 220px;
+    min-height: 100vh;
+  }
+  .seller-aside {
+    position: fixed;
+    min-width: 250px;
+    height: 100%;
+    .aside-icon {
+      min-width: 40px;
+    }
+  }
+  .seller-wrapper {
+    min-height: 100vh;
+    min-width: calc(100% - 220px);
+  }
+}
+
+.my-product {
+  width: 80%;
+  margin: auto;
+  table {
+    text-align: center;
+    width: 100%;
+    thead {
+      background-color: #b7b0bf;
+      height: 50px;
+      tr {
+        th {
+          border: 2px solid #ccc;
+        }
+      }
+    }
+    tbody {
+      tr {
+        height: 100px;
+        td {
+          border: 2px solid #ccc;
+          margin: auto;
+          img {
+            height: 100px;
+            margin: 10px;
+          }
+          button {
+            margin: 5px;
+          }
+        }
+      }
+      tr:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.sales-order {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: auto;
+  .sales-order-tabs {
+    .nav-item {
+      border-right: 1px solid #746883;
+    }
+    .nav-item:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.sales-order-content {
+  .input-group input {
+    width: 60%;
+  }
+  .accordion-menu {
+    background: #ced4da71;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-menu.active {
+    transition: 0.3s;
+    max-height: 100%;
+  }
+
+  .accordion-info {
+    background: #ced4da71;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-info.active {
+    transition: 0.3s;
+    max-height: 100%;
+  }
+}
+
+.seller-main{
+  width: 80%;
+  margin: auto;
+}

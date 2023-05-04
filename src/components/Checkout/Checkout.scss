@@ -1,0 +1,147 @@
+// 結帳清單
+.checkout-list {
+  max-width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  @media screen and (max-width: 992px) {
+    min-height: 100%;
+  }
+
+  .procduct-image {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  .amount {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+  }
+}
+
+// 資料
+.checkout-information {
+  .logo-image {
+    max-height: 75px;
+    max-width: 198px;
+  }
+  .mobile-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .mobile-list.active {
+    max-height: 2000px;
+    transition: 1s;
+    // overflow: auto;
+  }
+  .information-wrapper {
+    max-width: 90%;
+    margin: auto;
+
+    .logo-image {
+      max-height: 75px;
+      max-width: 198px;
+    }
+    .mobile-list {
+      cursor: pointer;
+    }
+  }
+}
+
+// 運送
+.checkout-shipping {
+  .logo-image {
+    max-height: 75px;
+    max-width: 198px;
+  }
+  .mobile-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .mobile-list.active {
+    max-height: 2000px;
+    transition: 1s;
+    // overflow: auto;
+  }
+  .shipping-wrapper {
+    max-width: 90%;
+    margin: auto;
+
+    .logo-image {
+      max-height: 75px;
+      max-width: 198px;
+    }
+    .mobile-list {
+      cursor: pointer;
+    }
+
+    .information-title {
+      width: 80px;
+    }
+  }
+}
+
+// 付款
+.checkout-payment {
+  .logo-image {
+    max-height: 75px;
+    max-width: 198px;
+  }
+  .mobile-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .mobile-list.active {
+    max-height: 3000px;
+    transition: 1s;
+    // overflow: auto;
+  }
+  .payment-wrapper {
+    max-width: 90%;
+    margin: auto;
+
+    .logo-image {
+      max-height: 75px;
+      max-width: 198px;
+    }
+    .mobile-list {
+      cursor: pointer;
+    }
+
+    .information-title {
+      width: 80px;
+    }
+
+    .pay-content {
+      max-height: 0;
+      overflow: hidden;
+    }
+    .pay-content.active {
+      max-height: 600px;
+      transition: 0.5s;
+    }
+  }
+}
+
+// 訂單明細
+.checkout-thankyou {
+  margin: auto;
+  max-width: 1000px;
+  .logo-image {
+    max-height: 75px;
+    max-width: 198px;
+  }
+  .thankyou-wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+}

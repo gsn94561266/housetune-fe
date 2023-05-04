@@ -1,0 +1,141 @@
+.insp, .insp_1 {
+    background: #FFFAF7;
+    .w-30 {
+        width: 30%;
+    }
+    .w-40 {
+        width: 40%;
+    }
+    button.page {
+        width: 30px;
+        height: 30px;
+    }
+    h3, h6 {
+        font-weight: 700;
+    }
+    .crumb, .subtitle {
+        font-size: 10px;
+    }
+    .svg1 {
+        left: 162px;
+        top: 0;
+    }
+    .hover-button-inner {
+        border-radius: 50%;
+        background: white;
+        width: 9px;
+        height: 9px;
+    }
+    .hover-button-inner:hover {
+        width: 12px;
+        height: 12px;
+        transition: 0.2s;
+    }
+    .hover-button-out {
+        border-radius: 50%;
+        background: rgba(217, 217, 217, 0.5);
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .insp1_btn1 {
+        left: 37%;
+        top: 38%;
+    }
+    .insp1_btn2 {
+        left: 37%;
+        top: 55%;
+    }
+    .insp1_btn3 {
+        top: 53%;
+        left: 75%;
+    }
+    .insp1_btn4 {
+        left: 37%;
+        top: 58%;
+    }
+    .insp1_btn5 {
+        left: 28%;
+        top: 58%;
+    }
+    .insp1_btn6 {
+        top: 79%;
+        left: 19%;
+    }
+    .insp1_btn7 {
+        left: 41%;
+        top: 25%;
+    }
+    .insp1_btn8 {
+        left: 82%;
+        top: 90%;
+    }
+    .prod1-1 {
+        top: 26.5%;
+        left: 7%;
+    }
+    .prod1-2 {
+        top: 43.5%;
+        left: 7%;
+    }
+    .prod1-3 {
+        top: 41.5%;
+        left: 35%;
+    }
+    .prod2-1 {
+        left: -37%;
+        top: 44.5%;
+    }
+    .prod3-1 {
+        left: -45%;
+        top: 44.5%;
+    }
+    .prod4-1 {
+        left: -32%;
+        top: 11.5%;
+    }
+    .prod4-2 {
+        left: -55%;
+        top: 65.5%;
+    }
+    .prod4-3 {
+        left: 8%;
+        top: 76.5%;
+    }
+    .maincard {
+        width: 48%;
+    }
+    .subcard {
+        width: 40%;
+    }
+    @media screen and (max-width:768px) {
+        .messenger {
+            display: none
+        }
+        .hover-button-out {
+            width: 10px;
+            height: 10px;
+        }
+        .hover-button-inner {
+            width: 6px;
+            height: 6px;
+        }
+        .title-description {
+            font-size: 10px;
+        }
+        .maincard {
+            width: 100%;
+        }
+        .card-body {
+            background: #FFFAF7;
+        }
+        .card {
+            border: none ;
+        }
+        .subcard {
+            
+            width: 100%;
+        }
+        
+    }
+}

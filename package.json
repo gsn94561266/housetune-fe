@@ -1,0 +1,70 @@
+{
+  "name": "housetune",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@douyinfe/semi-ui": "^2.28.1",
+    "@emailjs/browser": "^3.10.0",
+    "@react-google-maps/api": "^2.18.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
+    "copy-to-clipboard": "^3.3.3",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.40",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-geocode": "^0.2.3",
+    "react-paginate": "^8.1.4",
+    "react-router": "^6.6.1",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9",
+    "react-slick": "^0.29.0",
+    "react-stars": "^2.2.5",
+    "react-table": "^7.8.0",
+    "sass": "^1.57.1",
+    "slick-carousel": "^1.8.1",
+    "socket.io-client": "^4.5.4",
+    "use-cart": "^1.1.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.1"
+  }
+}

@@ -1,0 +1,36 @@
+.cart {
+  .chatroom {
+    position: fixed;
+    top: -30px;
+  }
+  .order-list-upper {
+    width: 98%;
+    /* height: 200px; */
+  }
+  .order-list-upper img {
+    /* width: 200px;
+ height: 170px; */
+    object-fit: contain;
+  }
+
+  .order-list-upper span {
+    font-weight: 700;
+  }
+  .div-price {
+    height: 300px;
+  }
+  .order-list-lower textarea {
+    width: 100%;
+    height: 80%;
+  }
+  .order-list-lower .btn-pay {
+    width: 100%;
+  }
+  .form-control {
+    background: #fff;
+    box-shadow: none;
+  }
+  .only-message-height {
+    min-height: 31vh;
+  }
+}

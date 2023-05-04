@@ -1,0 +1,150 @@
+/* ----- Header ----- */
+header {
+  .header-main {
+    min-height: 90px;
+    z-index: 500;
+  }
+
+  .nav-wrapper {
+    min-height: 60px;
+    margin: 0;
+  }
+
+  .logo-image {
+    max-height: 75px;
+    max-width: 198px;
+  }
+
+  /* dropdown */
+  .dropdown-main {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    transition: 0.3s;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 5;
+  }
+
+  .dropdown-main.active {
+    max-height: 100%;
+    z-index: 9999;
+  }
+
+  .dropdown-main li:hover {
+    background: #f5f4f6;
+    cursor: pointer;
+  }
+
+  /* hamburger */
+  .hamburger-menu {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s;
+    z-index: 3;
+  }
+
+  .hamburger-menu.active {
+    left: 0;
+    transition: 0.5s;
+    overflow: scroll;
+  }
+
+  .hamburger-bottom {
+    margin: 40px 30px 0 0;
+    padding-bottom: 100px;
+  }
+
+  /* accordion */
+  .accordion-header {
+    background: #ced4da71;
+    margin-left: -46px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .accordion-header.active {
+    background: #ced4da71;
+    margin-left: -46px;
+    max-height: 500px;
+    transition: 0.5s;
+  }
+  .cart-amount {
+    font-size: 1px;
+    left: 60%;
+    top: -40%;
+    background-color: #da5260;
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    padding: 0px 5.5px;
+  }
+  // search
+  .data-result {
+    margin-top: 3rem;
+    z-index: 999;
+    width: 100%;
+    height: 504px;
+    overflow: hidden;
+    .data-item {
+      background: white;
+    }
+    .data-item:hover {
+      background: #f5f4f6;
+    }
+    .search-img {
+      height: 40px;
+    }
+  }
+  .user-dropdown {
+    position: absolute;
+    top: 68px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #83838333;
+    transform: translateX(50px);
+  }
+  .user-dropdown.active {
+    transition: 2s;
+    max-height: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 5px #83838333;
+  }
+  .user-dropdown a:hover {
+    background: #b7b0bf;
+    color: #fff !important;
+    border-radius: 3px 3px 0 0;
+  }
+  .user-dropdown span:hover {
+    background: #b7b0bf;
+    color: #fff !important;
+    border-radius: 0 0 3px 3px;
+  }
+}
+
+/* ----- Footer ----- */
+footer {
+  min-height: 360px;
+
+  .footer-title {
+    cursor: default;
+  }
+  .accordion-menu {
+    background: #ced4da71;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-menu.active {
+    transition: 0.5s;
+    height: 100%;
+  }
+}

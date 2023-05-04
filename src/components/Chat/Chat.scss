@@ -1,0 +1,58 @@
+.chat {
+  z-index: 99999;
+  width: 350px;
+  height: 400px;
+  bottom: 0;
+  right: 150px;
+  .fa-xmark {
+    left: 90%;
+    cursor: pointer;
+  }
+  .w-10 {
+    width: 10%;
+  }
+  .w-90 {
+    width: 90%;
+  }
+  .text {
+    height: 40px;
+  }
+  .message-meta {
+    font-size: 6px;
+  }
+  .switch-zone {
+    left: 0;
+    top: -50px;
+  }
+  .message {
+    overflow-anchor: none;
+  }
+  .anchor {
+    min-height: 5px;
+    overflow-anchor: auto;
+  }
+  .notification {
+    width: 120px;
+    top: 47.5px;
+    left: -120px;
+    max-height: 300px;
+    overflow: auto;
+  }
+  .chatlist {
+    width: 120px;
+    top: 47.5px;
+    left: 100%;
+    max-height: 300px;
+    overflow: auto;
+  }
+  .noti,
+  .list {
+    cursor: pointer;
+  }
+  .mw-191 {
+    max-width: 191px;
+  }
+  .input-style {
+    outline: none;
+  }
+}

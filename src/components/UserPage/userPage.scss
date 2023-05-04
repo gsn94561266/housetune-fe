@@ -1,0 +1,120 @@
+// .accoun-input{
+//     background-color:#fff !important;
+// $input-bg:#F5F4F6;
+// $input-border-color:#B7B0BF;
+
+// }
+
+
+
+.user-menu {
+  transition: 0.3s;
+  min-height: 70vh;
+  .form-control {
+    background: #fff;
+    box-shadow: none;
+  }
+  .form-control:focus {
+    background: #fff;
+    box-shadow: none;
+  }
+  .bg-orange {
+    background-color: #fffaf7 !important;
+  }
+  .table > :not(caption) > * > * {
+    border-bottom-width: 0px !important;
+  }
+  .tdHeight {
+    min-height: 15vh;
+    line-height: 1.5rem !important;
+  }
+  .open-detail {
+    td {
+      border-bottom: 0;
+    }
+  }
+  .cash-detail {
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .every-details {
+    .text-align {
+      text-align: left;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+  }
+  .btn-active {
+    transition: 0.3s;
+  }
+  .change-tag {
+    transition: 0.2s;
+  }
+  .input-hide {
+    display: none;
+  }
+
+  // table rwd
+  @media (max-width: 736px) {
+    .table-rwd {
+      min-width: 100%;
+    }
+    /*針對tr去做隱藏*/
+    tr.tr-only-hide {
+      display: none !important;
+    }
+    .table-rwd tr {
+      // RWD 之後的 border
+      // border: 1px solid #ddd;
+    }
+    .table-rwd td {
+      text-align: right;
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .table-rwd th {
+      text-align: left;
+    }
+    .table-rwd td:before {
+      content: attr(data-th);
+      justify-content: space-between;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    /*當RWD縮小的時候.table-bordered 會有兩條線，所以針對.table-bordered去做修正*/
+    .table-rwd.table-bordered td,
+    .table-rwd.table-bordered th,
+    .table-rwd.table-bordered {
+      border: 0;
+    }
+  }
+  // 收放細節
+  .hide {
+    transition: all 0.3s;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .show {
+    max-height: 5000px;
+    transition: all 0.3s;
+  }
+
+  .counponHover:hover {
+    background: #746883 !important;
+    color: #fff !important;
+  }
+  .rwd-deleteBtn {
+    top: 0;
+    left: 0%;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+}

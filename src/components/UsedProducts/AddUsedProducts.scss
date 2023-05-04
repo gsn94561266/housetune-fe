@@ -1,0 +1,226 @@
+.add-used-products {
+  background: #fffaf7;
+  @mixin pad {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin mobile {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+  .container {
+    @include mobile() {
+      padding: 0;
+    }
+  }
+  .sidebar {
+    margin-right: 40px;
+    .sidebar_list {
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #b7b0bf;
+    }
+  }
+
+  .formStyle {
+    width: 70%;
+    @include mobile() {
+      width: 100%;
+    }
+    .infoStyle {
+      background: white;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #b7b0bf;
+      @include mobile() {
+        background: none;
+        box-shadow: none;
+      }
+      // 自訂手機版上傳圖片按鈕 & 排版
+      .mobileStyle {
+        @include mobile() {
+          padding: 10px;
+          background: white;
+          textarea {
+            border: none;
+            outline: none;
+            resize: none;
+          }
+          input.form-control {
+            border: none;
+            box-shadow: none;
+            padding: 0;
+          }
+          .custom-mobile-upload {
+            border: 2px dashed #ccc;
+            display: inline-block;
+            padding: 5px 2px;
+            width: 100px;
+            height: 100px;
+            line-height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+          }
+          input[type='file'] {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+          }
+        }
+      }
+      // 自訂桌機版上傳圖片按鈕
+      .padStyle {
+        input[type='file'] {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+        .custom-file-upload {
+          border: 2px dashed #ccc;
+          display: block;
+          padding: 5px 2px;
+          width: 100px;
+          height: 100px;
+          line-height: 0px;
+          font-size: 30px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .padText {
+          font-size: 20px;
+        }
+      }
+      .form-control {
+        @include mobile() {
+          background: none;
+          border: none;
+          box-shadow: none;
+          padding: 0;
+        }
+      }
+    }
+    // 手機版銷售資訊
+    .mobile_info {
+      width: 100%;
+      margin: auto;
+      padding: 10px;
+      li {
+        color: #343a40;
+      }
+      select {
+        border: none;
+      }
+      input {
+        border: none;
+      }
+      div {
+        padding-bottom: 15px;
+        border-bottom: 2px solid #ced4da;
+      }
+    }
+
+    .textLength {
+      justify-content: center;
+      width: 10%;
+      height: 100%;
+      @include mobile() {
+        width: 20%;
+        justify-content: end;
+      }
+    }
+  }
+  button {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 120px;
+    @include mobile() {
+      border-radius: 5px;
+      width: 160px;
+    }
+  }
+  .picBox {
+    border: 2px solid hsl(0, 0%, 0%);
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .toggle {
+    width: 55px;
+  }
+  .w-10 {
+    width: 10%;
+  }
+  .w-20 {
+    width: 20%;
+  }
+  .w-30 {
+    width: 30%;
+  }
+  .w-40 {
+    width: 40%;
+  }
+  .w-60 {
+    width: 60%;
+  }
+  .w-70 {
+    width: 70%;
+  }
+  .w-80 {
+    width: 80%;
+  }
+  .w-90 {
+    width: 90%;
+  }
+  .h-10 {
+    height: 10%;
+  }
+  .h-20 {
+    height: 20%;
+  }
+  .h-30 {
+    height: 30%;
+  }
+  .h-40 {
+    height: 40%;
+  }
+  .h-60 {
+    height: 60%;
+  }
+  .h-70 {
+    height: 70%;
+  }
+  .h-80 {
+    height: 80%;
+  }
+  .h-90 {
+    height: 90%;
+  }
+  .name ::-webkit-input-placeholder {
+    color: #ced4da;
+  }
+  textarea {
+    width: 100%;
+  }
+  textarea::-webkit-input-placeholder {
+    color: #ced4da;
+  }
+  .dfaic {
+    display: flex;
+    align-items: center;
+  }
+}
