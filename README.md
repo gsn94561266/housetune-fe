@@ -128,6 +128,8 @@ password : 12345678
 - Email JS
 - Google 登入
 - 綠界金流 API
+- LINE Pay API
+- Google Maps API
 
 ### 聯絡作者
 
